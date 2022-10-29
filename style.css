@@ -1,0 +1,119 @@
+body.dark-theme {
+    --bg: #222831;
+    --text-color: #EEEEEE;
+    --show-toggle-btn-dark: none;
+    --show-toggle-btn-light: block;
+}
+
+body {
+    --bg: #FFFBE9;
+    --text-color: #1C0A00;
+    --show-toggle-btn-dark: block;
+    --show-toggle-btn-light: none;
+}
+
+/* CUSTOM FONT */
+@font-face {
+    font-family: 'TitanOne';
+    src: url('./TitanOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('./Pacifico-Regular.ttf');
+}
+
+.container-fluid {
+    background-color: var(--bg);
+}
+
+.nav {
+    font-family: 'TitanOne';
+    font-size: 24px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 35px;
+}
+
+.toggle-btn {
+    cursor: pointer;
+}
+
+.light-toggle-btn {
+    color: #FDFF00;
+    display: var(--show-toggle-btn-light);
+}
+
+.dark-toggle-btn {
+    color: #000;
+    display: var(--show-toggle-btn-dark);
+}
+
+p {
+    color: var(--text-color);
+    font-family: 'TitanOne';
+    font-size: 40px;
+}
+
+.section1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10% 0% 2% 0%;
+}
+
+.section2>h1 {
+    font-family: "TitanOne";
+    font-size: 4em;
+    text-align: center;
+    color: var(--text-color);
+    margin: 5%;
+}
+
+img.img-thumbnail {
+    height: 400px;
+    padding: 0px;
+    border: 5px solid;
+    border-radius: 100%;
+    border-color: var(--text-color);
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    padding: 20px;
+    color: var(--text-color);
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
