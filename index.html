@@ -10,34 +10,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.js"></script>
 </head>
 
-<body class="light-theme">
-    <div class="container-fluid">
-        <!-- Header -->
-        <!-- Navigation Panel -->
-        <ul class="nav justify-content-end">
+<body class="light-theme container-fluid">
+    <div style="padding: 2%;">
+        <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/ashwin-solanki-b49112152" target="_blank" class="nav-link"><i
+                        class="bi bi-linkedin"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-github"></i></a>
+                <a href="https://github.com/ashwin-solanki-789" target="_blank" class="nav-link"><i
+                        class="bi bi-github"></i></a>
             </li>
             <li class="nav-item toggle-btn">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-brightness-high-fill light-toggle-btn"></i>
+                <a class="nav-link">
+                    <i class="bi bi-brightness-high-fill light-toggle-btn" style="color: #FDFF00;"></i>
                     <i class="bi bi-moon-fill dark-toggle-btn"></i>
                 </a>
             </li>
         </ul>
-        <!-- Header End -->
 
-        <!-- Main Body -->
-        <!-- Section 1 -->
         <div class="section1 text-center">
             <div class="">
-                <img src="./ashwin.jpg" class="img-fluid img-thumbnail mx-auto d-block" alt="...">
+                <img src="./ashwin.jpg" class="img-fluid mx-auto d-block" alt="...">
             </div>
             <div class="typewriter">
                 <p>
@@ -48,27 +44,109 @@
                 </h1>
             </div>
         </div>
-        <!-- Section 2 -->
-        <div class="section2">
-            <h1>Click - To Know My Journey</h1>
+        <h1 class="k1">Know More</h1>
+        <div class="row details">
+            <div class="tab col-lg-2 col-md-2 col-sm-12">
+                <button class="tablinks" onclick="openTab(event, 'firstTab')" id="defaultOpen">MySelf</button>
+                <button class="tablinks" onclick="openTab(event, 'secondTab')">Experience</button>
+                <button class="tablinks" onclick="openTab(event, 'thirdTab')">Education Details</button>
+                <button class="tablinks" onclick="openTab(event, 'fourthTab')">Techincal Skills</button>
+                <button class="tablinks" onclick="openTab(event, 'fifthTab')">Projects</button>
+                <button class="tablinks" onclick="openTab(event, 'sixthTab')">Achivements</button>
+            </div>
+            <div class="content col-lg-8 col-md-8 col-sm-12">
+                <div id="firstTab" class="tabcontent">
+                    <h3>MySelf</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim maximus enim, nec dictum
+                        diam
+                        pellentesque nec. Nulla facilisis, massa ut egestas bibendum, ex libero varius nisl, a aliquet
+                        dui
+                        ante sed
+                        purus. Donec vitae ullamcorper lacus, ut vehicula metus. Duis molestie ipsum quis nisl ultrices
+                        feugiat. Nam at
+                        purus ut ligula ultrices aliquet vitae nec eros. Aenean condimentum tellus eu urna tincidunt
+                        volutpat. Nunc
+                        bibendum quam ut congue dignissim. Aliquam congue velit at tortor consequat cursus ut ut diam.
+                        Fusce
+                        iaculis
+                        auctor purus.</p>
+                </div>
+
+                <div id="secondTab" class="tabcontent">
+                    <h3>Work Experience</h3>
+                    <p>Cras euismod, urna id blandit maximus, sapien lorem tristique ex, eget maximus nibh tellus in
+                        arcu.
+                        Suspendisse
+                        libero metus, eleifend elementum velit varius, dapibus rutrum ex. Ut tincidunt, felis auctor
+                        ornare
+                        fermentum,
+                        sem quam imperdiet turpis, quis porttitor purus lacus quis quam. Donec erat massa, sodales sit
+                        amet
+                        mollis
+                        pretium, tempor ac ex. Maecenas fermentum tristique venenatis. Vivamus sollicitudin consequat
+                        ligula
+                        eu
+                        facilisis. </p>
+                </div>
+
+                <div id="thirdTab" class="tabcontent">
+                    <h3>Education Details</h3>
+                    <p>Suspendisse lacinia sapien eget risus porttitor, sit amet faucibus velit ullamcorper. Quisque
+                        dictum
+                        erat neque,
+                        placerat dignissim ante tempor at. Nullam ullamcorper justo felis, nec pulvinar ex suscipit vel.
+                        Donec viverra
+                        leo ut ante iaculis, sit amet porta leo vehicula. Suspendisse fermentum congue ligula sed
+                        molestie.
+                        Praesent
+                        lacinia, massa non fringilla scelerisque, tellus arcu sodales nunc, in ultrices sapien ante et
+                        ante.
+                        In iaculis
+                        tellus urna, at convallis massa porta in. Proin vehicula facilisis varius. Pellentesque vitae
+                        purus
+                        non mauris
+                        dictum
+                        erat neque,
+                        placerat dignissim ante tempor at. Nullam ullamcorper justo felis, nec pulvinar ex suscipit vel.
+                        Donec viverra
+                        leo ut ante iaculis, sit amet porta leo vehicula. Suspendisse fermentum congue ligula sed
+                        molestie.
+                        Praesent
+                        lacinia, massa non fringilla scelerisque, tellus arcu sodales nunc, in ultrices sapien ante et
+                        ante.
+                        In iaculis
+                        tellus urna, at convallis massa porta in. Proin vehicula facilisis varius. Pellentesque vitae
+                        purus
+                        non mauris
+                        ultricies porttitor nec sodales nulla.</p>
+                </div>
+
+                <div id="fourthTab" class="tabcontent">
+                    <h3>Technical Skills</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam officia culpa nobis commodi
+                        voluptate quidem ipsam ducimus. Molestiae fugiat exercitationem placeat corporis. A eligendi
+                        sunt architecto, voluptatum placeat iste libero?</p>
+                </div>
+
+                <div id="fifthTab" class="tabcontent">
+                    <h3>Projects</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam officia culpa nobis commodi
+                        voluptate quidem ipsam ducimus. Molestiae fugiat exercitationem placeat corporis. A eligendi
+                        sunt architecto, voluptatum placeat iste libero?</p>
+                </div>
+
+                <div id="sixthTab" class="tabcontent">
+                    <h3>Academic Achivements</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam officia culpa nobis commodi
+                        voluptate quidem ipsam ducimus. Molestiae fugiat exercitationem placeat corporis. A eligendi
+                        sunt architecto, voluptatum placeat iste libero?</p>
+                </div>
+            </div>
+
         </div>
-        <!-- Main Body End-->
 
-        <!-- Footer -->
-    </div>
-    <script>
-        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-        if (prefersDarkScheme.matches) {
-            document.body.classList.add("dark-theme");
-        } else {
-            document.body.classList.remove("dark-theme");
-        }
-
-        $('.toggle-btn').click(() => {
-            $('body').toggleClass('dark-theme')
-        })
-    </script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>
